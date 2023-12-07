@@ -474,6 +474,7 @@ main {
 }
 
 .cards4 {
+  padding-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -483,9 +484,14 @@ main {
 .card4 {
   border-radius: 4px;
   background: var(--main-surface, #fff);
-  width: 376px;
+  max-width: 376px;
+  width: 100%;
   /* Default/XS */
   box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.card4 img {
+  max-width: 376px;
+  width: 100%;
 }
 .card4 .cardp {
   display: flex;
@@ -574,6 +580,33 @@ main {
   background: #70c05b;
 }
 
+footer {
+  padding-top: 80px;
+}
+
+.all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.footer-items .foot-item {
+  color: var(--main-on-surface, #414141);
+  /* Desc/Text/XS */
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+
 .menu {
   border: 0;
   background: transparent;
@@ -581,7 +614,33 @@ main {
   cursor: pointer;
 }
 
-@media (max-width: 1440px) {
+.all2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.svgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.alll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 133px;
+}
+
+.img1 img {
+  max-width: 193px;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
   .cards {
     flex-wrap: wrap;
   }
@@ -645,5 +704,17 @@ main {
   }
   .open {
     box-shadow: none;
+  }
+  .all {
+    flex-wrap: wrap;
+  }
+  .all2 {
+    flex-wrap: wrap;
+  }
+  .alll {
+    flex-wrap: wrap;
+  }
+  .footer-items {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=index.css.map */
