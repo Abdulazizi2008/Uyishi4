@@ -427,6 +427,161 @@ main {
     }
   }
 }
+.par11 {
+  padding-left: 116px;
+  .par12 {
+    color: var(--main-on-surface, #414141);
+    padding-top: 120px;
+    /* Desc/Header/M */
+    font-family: Rubik;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 54px */
+  }
+  .img {
+    padding-top: 40px;
+    max-width: 1208px;
+    width: 100%;
+  }
+  .par3 {
+    padding-top: 40px;
+  }
+}
+.buttons {
+  padding-top: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  button {
+    color: var(--grayscale-hardest, #606060);
+    text-align: center;
+
+    width: 86px;
+    height: 32px;
+    padding: 8px;
+
+    border-radius: 4px;
+    background: var(--grayscale-lightest, #f3f2f1);
+    border: none;
+    /* Desc/Text/XS */
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+  }
+  button:hover {
+    color: #fff;
+    background-color: #70c05b;
+  }
+}
+.cards4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.card4 {
+  border-radius: 4px;
+  background: var(--main-surface, #fff);
+  width: 376px;
+  /* Default/XS */
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  .cardp {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    .p1 {
+      color: var(--grayscale-hard, #8f8f8f);
+      max-width: 356px;
+      width: 100%;
+      /* Desc/Text/XS */
+      font-family: Rubik;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 18px */
+    }
+    .p2 {
+      color: var(--main-on-surface, #414141);
+      max-width: 356px;
+      width: 100%;
+      /* Desc/Header/XS */
+      font-family: Rubik;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 27px */
+    }
+    .p3 {
+      color: var(--main-on-surface, #414141);
+      max-width: 356px;
+      width: 100%;
+      /* Desc/Text/S */
+      font-family: Rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
+    .p4 {
+      color: var(--main-on-surface, #414141);
+      max-width: 356px;
+      width: 100%;
+      /* Desc/Text/S */
+      font-family: Rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      padding-bottom: 48px;
+    }
+    .p5 {
+      color: var(--main-on-surface, #414141);
+      max-width: 356px;
+      width: 100%;
+      /* Desc/Text/S */
+      font-family: Rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      padding-bottom: 24px;
+    }
+    button {
+      border-radius: 4px;
+      background: var(--main-secondary-muted, #e5ffde);
+      color: var(--main-secondary, #70c05b);
+      border: none;
+      display: flex;
+      width: 150px;
+      padding: 8px;
+      justify-content: center;
+      align-items: start;
+      gap: 8px;
+      /* Desc/Text/S */
+      font-family: Rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
+    button:hover {
+      color: #fff;
+      background: #70c05b;
+    }
+  }
+}
+.menu {
+  border: 0;
+  background: transparent;
+  display: none;
+  cursor: pointer;
+}
 @media (max-width: 1440px) {
   .cards {
     flex-wrap: wrap;
@@ -458,5 +613,40 @@ main {
   }
   .img1 {
     height: auto;
+  }
+  .cards4 {
+    flex-wrap: wrap;
+  }
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .par11 {
+    text-align: center;
+    padding-left: 0;
+  }
+  .nav-items {
+    flex-direction: column;
+    gap: 24px;
+    position: fixed;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 104px);
+    background: #fff;
+    padding: 60px 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+  }
+  .menu {
+    display: block;
+  }
+
+  .open .nav-items {
+    left: 0;
+  }
+
+  .open {
+    box-shadow: none;
   }
 }
