@@ -64,6 +64,7 @@ header {
 .nav-items .nav-item2 #text {
   border-radius: 4px;
   max-width: 360px;
+  width: 100%;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
@@ -688,6 +689,7 @@ footer {
     flex-direction: column;
     gap: 24px;
     position: fixed;
+    top: 40px;
     left: -100%;
     width: 100%;
     height: calc(100vh - 104px);
